@@ -21,7 +21,7 @@ Load Page
 
 Verify Page Loaded
     ${LINK_TEXT}                    Get Title
-    Should Be Equal                 ${LINK_TEXT}      MatGlad
+    Should Be Equal                 ${LINK_TEXT}      Matglad
     Page Should Contain             Welcome to Petclinic
 
 End Web Test
