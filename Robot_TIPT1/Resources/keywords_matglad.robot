@@ -37,7 +37,7 @@ Verify Page "Jambalaya" Loaded
     Should Be Equal                          ${verify_text}                  Jambalaya
 
 Verify Pop-Up "Jambalaya" Overview Loaded
-    Sleep                                    0.4
+    Sleep                                    0.5
     Wait Until Page Contains                 Översikt -
     Page Should Contain                      Översikt -
 
