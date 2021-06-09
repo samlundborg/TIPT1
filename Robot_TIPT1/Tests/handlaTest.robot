@@ -1,3 +1,5 @@
+
+
 *** Settings ***
 
 Library                 SeleniumLibrary
@@ -20,4 +22,5 @@ titel
     Click on Spara
     Click on Handla
     Mark recipe
-
+    Click on Handla
+    Click on Skicka Lista

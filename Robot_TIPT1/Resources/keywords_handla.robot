@@ -38,10 +38,10 @@ Click on Spara
 
 Click on Handla
     Click element   xpath://*[@id="full-container"]/navigation-footer/div/div
-    Page should contain     Handla för antal dagar
+    Page should contain element      xpath://*[@id="full-container"]/navigation-footer/div/div
 
 Mark recipe
-    sleep   1
+    sleep   0.5
     Click element   xpath://*[@id="shop-for-days-container"]/ul/li/div/div[2]/img
    ## ${element}  Set Variable    xpath://*[@id="shop-for-days-container"]/ul/li/div/div[1]/div[2]
    ## ${className}    Set Variable    collection-item ng-scope checked
@@ -49,6 +49,6 @@ Mark recipe
     sleep   1
     ## page should contain element      ${element}[contains(@class, '${className}')]
 
-
-
-
+Click on Skicka Lista
+    sleep   0.5
+    Click element   xpath://*[@id="shoppinglist-table"]/div/a

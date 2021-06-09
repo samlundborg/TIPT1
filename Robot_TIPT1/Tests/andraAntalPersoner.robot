@@ -16,4 +16,9 @@ ${INSTALLNINGAR_SIDA}					Mina inställningar
 	Go to Web Page
 	Go to Inställningar
 	Verify on Inställningar
-	Verify default-värde är 2 personer
+	Verify default-value is 2 people
+	Change number of people
+	Verify number of people has changed
+	Click back button
+	Go to Inställningar
+	Verify number of people has changed
