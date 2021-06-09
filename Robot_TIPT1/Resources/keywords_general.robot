@@ -6,6 +6,7 @@
 ${BROWSER}                   chrome
 ${URL_HOMEPAGE}              http://app.matglad.nu/#/startview
 ${URL_RECIPE}                http://app.matglad.nu/#/recipe-categories
+${URL_TITLE}				 Matglad
 ${i}                         1
 
 
