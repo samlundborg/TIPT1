@@ -15,7 +15,7 @@ Test Teardown       End Web Test
 
 Day converter
     ${day}         Today By Number
-    ${compare}     Convert to Integer           3
+    ${compare}     Convert to Integer           4
     Should be Equal           ${compare}        ${day}
 
 Test day converter
