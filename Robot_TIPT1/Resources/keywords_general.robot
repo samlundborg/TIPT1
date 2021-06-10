@@ -6,6 +6,7 @@
 ${BROWSER}                   chrome
 ${URL_HOMEPAGE}              http://app.matglad.nu/#/startview
 ${URL_RECIPE}                http://app.matglad.nu/#/recipe-categories
+${URL_TITLE}				 Matglad
 ${i}                         1
 
 
@@ -14,6 +15,7 @@ Begin Web Test
     Open browser                     about:blank             ${BROWSER}
     Maximize Browser Window
     Set selenium timeout             10
+
 
 Go to Web Page
     Load Page
@@ -29,3 +31,4 @@ Verify Page Loaded
 
 End Web Test
     Close Browser
+
