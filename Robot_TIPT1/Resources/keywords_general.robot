@@ -15,7 +15,6 @@ Begin Web Test
     Maximize Browser Window
     Set selenium timeout             10
 
-
 Go to Web Page
     Load Page
     Verify Page Loaded
