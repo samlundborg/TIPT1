@@ -11,10 +11,10 @@ Test Teardown                      End Web Test
 ${INSTALLNINGAR_SIDA}				Mina inställningar
 
 *** Test Cases ***
-[Documentation]  					Change number of people on Settings
-[Tags]  							TSH-04
 
 Ändra antal personer
+	[Documentation]  						Ändra antal personer i Inställningar
+	[Tags]  								TSH-04
 	Go to Web Page
 	Go to Inställningar
 	Verify on Inställningar
