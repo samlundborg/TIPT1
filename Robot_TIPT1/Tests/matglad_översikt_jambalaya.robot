@@ -25,4 +25,5 @@ Hela översiktsprocessen från ett specifikt recept - Jambalaya
           END
            Exit For Loop If    ${i} == 16
         END
-#Avvakta till imorgon - Vi måste efter for-loopen lösa keyword till att kryssa ner pop-upp rutan.
+        User Cancels The Pop Up && Jambalaya Page is Verified
+

@@ -18,21 +18,27 @@ Click "Jambalaya"
 Verify Page "ReceptVäljaren" Loaded
     Sleep                                    0.4
     Wait Until Page Contains Element         xpath://html/body/div/navigation-bar/div/h1
-    Page Should Contain                      ReceptVäljaren
+    Wait Until Element is Enabled            xpath://html/body/div/navigation-bar/div/h1
+    ${verify_text}                           Get Text                        xpath://html/body/div/navigation-bar/div/h1
+    Should Be Equal                          ${verify_text}                  ReceptVäljaren
 
 Verify Page "Fredagsmys" Loaded
     Sleep                                    0.4
     Wait Until Page Contains Element         xpath://html/body/div/navigation-bar/div/h1
-    Page Should Contain                      Fredagsmys
+    Wait Until Element is Enabled            xpath://html/body/div/navigation-bar/div/h1
+    ${verify_text}                           Get Text                        xpath://html/body/div/navigation-bar/div/h1
+    Should Be Equal                          ${verify_text}                  Fredagsmys
 
 Verify Page "Jambalaya" Loaded
     Sleep                                    0.4
     Wait Until Page Contains Element         xpath://html/body/div/navigation-bar/div/h1
-    Page Should Contain                      Jambalaya
+    Wait Until Element is Enabled            xpath://html/body/div/navigation-bar/div/h1
+    ${verify_text}                           Get Text                        xpath://html/body/div/navigation-bar/div/h1
+    Should Be Equal                          ${verify_text}                  Jambalaya
 
 Verify Pop-Up "Jambalaya" Overview Loaded
-    Sleep                                    0.4
-    Wait Until Page Contains Element         xpath://html/body/div/div/div/div[4]/div/div/div[1]/div/h3
+    Sleep                                    0.5
+    Wait Until Page Contains                 Översikt -
     Page Should Contain                      Översikt -
 
 ### Click Different Buttons Here
@@ -45,6 +51,13 @@ Click Button Continue (>>) On Pop Up OverView
 
 Click Button Continue (>>) On Pop Up OverView Continuation
     Click Element                           xpath://html/body/div/div/div/div[4]/div/div/div[3]/img[2]
+
+Click Button Cancel (x) On Pop Up OverView
+    Click Element                           xpath://html/body/div/div/div/div[4]/a/img
+
+CkClick Button Cancel (x) On Pop Up OverView With Mouse Left Click
+    Mouse Down                              xpath://html/body/div/div/div/div[4]/a/img
+    Mouse Up                                xpath://html/body/div/div/div/div[4]/a/img
 
 ### Verify Pop-Up Boxes Shown Different Stages
 
@@ -87,3 +100,7 @@ User Clicks Continue Button && Pop-Up is Verified And Shows "Redskap"
 
 User Clicks Continuation Button && Pop-Up is Verified And Shows Stage 1
     Click Button Continue (>>) On Pop Up OverView Continuation
+
+User Cancels The Pop Up && Jambalaya Page is Verified
+    Click Button Cancel (x) On Pop Up OverView
+    Verify Page "Jambalaya" Loaded
