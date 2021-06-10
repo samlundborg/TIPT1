@@ -2,13 +2,16 @@
 
 Library                     SeleniumLibrary
 Library                     DateTime
+Library                     DateTime.py
+Library                     dateConverter.py
 *** Variables ***
-
-##${CurrentDay}    Get Current Date    result_format=%d
-##Log    ${CurrentDay}
 
 *** Keywords ***
 
+Today by name
+    ${CurrentDayNum}        Today By Number
+    ${CurrentDayName}       day number to swedish      ${CurrentDayNum}
+    Should be Equal         Onsdag                     ${CurrentDayName}
 
 Go to Matsedel
    Click element       id=planner-btn           RETURN
@@ -17,13 +20,11 @@ Go to Matsedel
    page should contain          Veckomatsedel
 
 Click on todays date
-   ${CurrentDay}        Get Current Date        result_format=%u
+   ${CurrentDay}        Today By Number
    Click element    xpath://*[@id="planner-view-container"]/div/div[${CurrentDay}]/div[2]/div[1]/div[2]/h4
    sleep    0.5
    Wait until page contains     Välj recept
    wait until page contains element     xpath://*[@id="choose-buttons"]/div[2]/h3
-   ##TODO Fixa CurrentDay.. antingen -1 eller python switch/Case / if-sats
-   ##TODO page should contain  blabla
 
 Click on Valj recept at mig
     sleep   0.5
@@ -43,12 +44,8 @@ Click on Handla
 Mark recipe
     sleep   0.5
     Click element   xpath://*[@id="shop-for-days-container"]/ul/li/div/div[2]/img
-   ## ${element}  Set Variable    xpath://*[@id="shop-for-days-container"]/ul/li/div/div[1]/div[2]
-   ## ${className}    Set Variable    collection-item ng-scope checked
-
-    sleep   1
-    ## page should contain element      ${element}[contains(@class, '${className}')]
-
+    ##TODO Need to assert
 Click on Skicka Lista
     sleep   0.5
     Click element   xpath://*[@id="shoppinglist-table"]/div/a
+    ##TODO Need to assert
