@@ -23,7 +23,7 @@ Hela översiktsprocessen från ett specifikt recept - Jambalaya
             Click Button Continue (>>) On Pop Up OverView Continuation
             Verify Pop-Up is at Stage   ${i}
           END
-           Exit For Loop If    ${i} == 16
+           EXIT FOR LOOP IF    ${i} == 16
         END
         User Cancels The Pop Up && Jambalaya Page is Verified
 
