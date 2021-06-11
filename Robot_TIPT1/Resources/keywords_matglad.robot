@@ -5,6 +5,7 @@
 ### Click Different Categories On MatGlad Here
 
 Click "ReceptVäljaren"
+    Sleep                                    0.3
     Click Element                            xpath://html/body/div/div/div/div/div[1]/a[2]
 
 Click "Fredagsmys"
