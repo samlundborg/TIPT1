@@ -5,7 +5,8 @@
 ### Click Different Categories On MatGlad Here
 
 Click "ReceptVäljaren"
-    #Click Element                            xpath://html/body/div/div/div/div/div[1]/a[2]
+    Sleep                                    0.4
+    Click Element                            xpath://html/body/div/div/div/div/div[1]/a[2]
 
 Click "Fredagsmys"
     Click Element                            xpath://html/body/div/div/div/collection-view/ul/li[6]/a/div/img
