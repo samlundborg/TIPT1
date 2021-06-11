@@ -16,7 +16,7 @@ Today by name
 Go to Matsedel
    Maximize Browser Window
    Sleep    1
-   Click element       xpath://html/body/div/div/div/div/div[1]/a[3]
+   Go to                        ${URL_PLANNER}
    sleep    1
    wait until page contains     Veckomatsedel
    page should contain          Veckomatsedel
