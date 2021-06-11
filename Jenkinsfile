@@ -4,7 +4,7 @@
 
                stage('Install dependencies') {
                     steps {
-                        sh 'pip install pytz'
+                        sh 'python3.6 -m pip install pytz'
                     }
                 }
 
