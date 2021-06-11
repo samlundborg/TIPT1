@@ -14,9 +14,9 @@ Today by name
     Should be Equal         Fredag                    ${CurrentDayName}
 
 Go to Matsedel
-   Sleep    0.5
+   Sleep    2
    Click element       id=planner-btn
-   sleep    0.5
+   sleep    2
    wait until page contains     Veckomatsedel
    page should contain          Veckomatsedel
 
