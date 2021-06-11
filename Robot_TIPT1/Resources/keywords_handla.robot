@@ -15,7 +15,7 @@ Today by name
 
 Go to Matsedel
    Sleep    0.5
-   Click element       id=planner-btn           RETURN
+   Click element       id=planner-btn
    sleep    0.5
    wait until page contains     Veckomatsedel
    page should contain          Veckomatsedel
