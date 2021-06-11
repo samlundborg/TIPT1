@@ -14,6 +14,7 @@ Today by name
     Should be Equal         Fredag                    ${CurrentDayName}
 
 Go to Matsedel
+   Maximize Browser Window
    Sleep    1
    Click element       xpath://html/body/div/div/div/div/div[1]/a[3]
    sleep    1

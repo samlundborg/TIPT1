@@ -8,6 +8,7 @@ Resource                ../Resources/keywords_handla.robot
 Library                 ../Resources/DateTime.py
 Library                 ../Resources/dateConverter.py
 Library                 DateTime
+Test Setup          Begin Web Test
 Test Teardown       End Web Test
 
 *** Test Cases ***
@@ -17,7 +18,6 @@ Handla Test
     [Tags]  TSH-01
 
 
-    Begin Web Test
     Go to Web Page
     Go to Matsedel
     Click on todays date
