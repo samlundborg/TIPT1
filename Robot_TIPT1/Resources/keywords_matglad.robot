@@ -75,12 +75,14 @@ Verify Pop-Up is at Stage
 
 Navigate Through All Stages of Pop-Ups Regarding Overview
     FOR    ${i}     IN RANGE  16
-          RUN KEYWORD IF  ${i} != 0
-            Click Button Continue (>>) On Pop Up OverView Continuation
-            Verify Pop-Up is at Stage   ${i}
-          END
-           EXIT FOR LOOP IF    ${i} == 16
+          RUN KEYWORD IF  ${i} != 0  Verify Pop-Up Stages Confirmed     ${i}
+              EXIT FOR LOOP IF    ${i} == 16
     END
+
+Verify Pop-Up Stages Confirmed
+    [Arguments]                 ${i}
+    Click Button Continue (>>) On Pop Up OverView Continuation
+    Verify Pop-Up is at Stage   ${i}
 
 User Has Access to Webpage && Clicks Recept && Page is Verified
     Go to Web Page
