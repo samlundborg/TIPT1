@@ -2,6 +2,11 @@
     agent any
     stages {
 
+               stage('Install dependencies') {
+                    steps {
+                        sh 'pip install pytz'
+                    }
+                }
 
         stage('Robot Test - Matglad') {
             steps {
