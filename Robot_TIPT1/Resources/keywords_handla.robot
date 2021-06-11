@@ -15,7 +15,7 @@ Today by name
 
 Go to Matsedel
    Sleep    2
-   Click element       id=planner-btn
+   Click element       xpath://html/body/div/div/div/div/div[1]/a[3]
    sleep    2
    wait until page contains     Veckomatsedel
    page should contain          Veckomatsedel
