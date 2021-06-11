@@ -18,12 +18,6 @@ Hela översiktsprocessen från ett specifikt recept - Jambalaya
         User Clicks Overview Button && Pop-Up is Verified
         User Clicks Continue Button && Pop-Up is Verified And Shows "Ingredienser"
         User Clicks Continue Button && Pop-Up is Verified And Shows "Redskap"
-        FOR    ${i}     IN RANGE  16
-          IF  ${i} != 0
-            Click Button Continue (>>) On Pop Up OverView Continuation
-            Verify Pop-Up is at Stage   ${i}
-          END
-           EXIT FOR LOOP IF    ${i} == 16
-        END
+        Navigate Through All Stages of Pop-Ups Regarding Overview
         User Cancels The Pop Up && Jambalaya Page is Verified
 
