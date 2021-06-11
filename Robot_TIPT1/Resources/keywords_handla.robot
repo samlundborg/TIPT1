@@ -11,11 +11,13 @@ Library                     dateConverter.py
 Today by name
     ${CurrentDayNum}        Today By Number
     ${CurrentDayName}       day number to swedish      ${CurrentDayNum}
-    Should be Equal         Torsdag                    ${CurrentDayName}
+    Should be Equal         Fredag                    ${CurrentDayName}
 
 Go to Matsedel
-   Click element       id=planner-btn           RETURN
-   sleep    0.5
+   Maximize Browser Window
+   Sleep    1
+   Click element       xpath://html/body/div/div/div/div/div[1]/a[3]
+   sleep    1
    wait until page contains     Veckomatsedel
    page should contain          Veckomatsedel
 
