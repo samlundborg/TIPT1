@@ -14,9 +14,9 @@ Today by name
     Should be Equal         Fredag                    ${CurrentDayName}
 
 Go to Matsedel
-   Sleep    2
+   Sleep    1
    Click element       xpath://html/body/div/div/div/div/div[1]/a[3]
-   sleep    2
+   sleep    1
    wait until page contains     Veckomatsedel
    page should contain          Veckomatsedel
 
