@@ -11,7 +11,7 @@ Library                     dateConverter.py
 Today by name
     ${CurrentDayNum}        Today By Number
     ${CurrentDayName}       day number to swedish      ${CurrentDayNum}
-    Should be Equal         Torsdag                    ${CurrentDayName}
+    Should be Equal         Fredag                    ${CurrentDayName}
 
 Go to Matsedel
    Click element       id=planner-btn           RETURN
