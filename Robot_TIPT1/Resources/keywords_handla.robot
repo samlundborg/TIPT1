@@ -44,6 +44,7 @@ Click on Handla
 Mark recipe
     sleep   0.3
     Click element   xpath://*[@id="shop-for-days-container"]/ul/li/div/div[2]/img
+    Page should contain element     xpath://html/body/div/div/div/ul/li
     ##TODO Need to assert
 Click on Skicka Lista
     sleep   0.3
