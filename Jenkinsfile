@@ -47,7 +47,7 @@
                         step(
                             [
                                 $class                  :   'RobotPublisher',
-                                outputPath              :   'Robot_TIPT1/Results',
+                                outputPath              :   'Robot_TIPT1/ResultsAuto',
                                 outputFileName          :   '**/output.xml',
                                 reportFileName          :   '**/report.html',
                                 logFileName             :   '**/log.html',
