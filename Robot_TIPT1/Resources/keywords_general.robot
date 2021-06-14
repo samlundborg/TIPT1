@@ -9,7 +9,7 @@ ${URL_RECIPE}                http://app.matglad.nu/#/recipe-categories
 ${URL_TITLE}				 Matglad
 ${URL_PLANNER}               http://app.matglad.nu/#/planner
 ${i}                         1
-
+${INSTALLNINGAR_SIDA}		 Mina inställningar
 
 
 *** Keywords ***

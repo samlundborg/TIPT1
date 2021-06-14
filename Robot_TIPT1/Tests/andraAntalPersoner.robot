@@ -6,10 +6,6 @@ Library                            SeleniumLibrary
 Test Setup                         Begin Web Test
 Test Teardown                      End Web Test
 
-
-*** Variables ***
-${INSTALLNINGAR_SIDA}				Mina inställningar
-
 *** Test Cases ***
 
 Ändra antal personer
