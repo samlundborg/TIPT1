@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation           Testa flödet av handlingsfunktionen
 Library                 SeleniumLibrary
 Resource                ../Resources/keywords_general.robot
 Resource                ../Resources/keywords_handla.robot
