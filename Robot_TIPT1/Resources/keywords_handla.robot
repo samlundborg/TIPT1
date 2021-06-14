@@ -1,13 +1,13 @@
 *** Settings ***
-Library                                     SeleniumLibrary
-Library                                     DateTime
-Library                                     dateConverter.py
+Library                                      SeleniumLibrary
+Library                                      DateTime
+Library                                      dateConverter.py
 
 *** Keywords ***
 Today by name
-    ${CurrentDayNum}                        Today By Number
-    ${CurrentDayName}                       Day Number To Swedish      ${CurrentDayNum}
-    Should be Equal                         Fredag                     ${CurrentDayName}
+    ${CurrentDayNum}                         Today By Number
+    ${CurrentDayName}                        Day Number To Swedish      ${CurrentDayNum}
+    Should be Equal                          Fredag                     ${CurrentDayName}
 
 Go to Matsedel
     Maximize Browser Window
